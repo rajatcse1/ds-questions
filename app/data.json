@@ -1,0 +1,190 @@
+{
+  "folder": "domains",
+  "restbaseurl": "https://www.hackerrank.com/rest/contests/master",
+  "catagories": [
+    {
+      "name": "Algorithms",
+      "folder": "algorithms",
+      "restapi": "algorithms",
+      "subcategories": [
+        {
+          "name": "Warmup",
+          "link": "warmup"
+        },
+        {
+          "name": "Implementation",
+          "link": "implementation"
+        },
+        {
+          "name": "Strings",
+          "link": "strings"
+        },
+        {
+          "name": "Sorting",
+          "link": "arrays-and-sorting"
+        },
+        {
+          "name": "Search",
+          "link": "search"
+        },
+        {
+          "name": "Graph Theory",
+          "link": "graph-theory"
+        },
+        {
+          "name": "Greedy",
+          "link": "greedy"
+        },
+        {
+          "name": "Dynamic Programming",
+          "link": "dynamic-programming"
+        },
+        {
+          "name": "Constructive Algorithms",
+          "link": "constructive-algorithms"
+        },
+        {
+          "name": "Bit Manipulation",
+          "link": "bit-manipulation"
+        },
+        {
+          "name": "Recursion",
+          "link": "recursion"
+        },
+        {
+          "name": "Game Theory",
+          "link": "game-theory"
+        },
+        {
+          "name": "NP Complete",
+          "link": "np-complete-problems"
+        }
+      ]
+    },
+    {
+      "name": "Data Structure",
+      "folder": "data-structures",
+      "restapi": "data-structures",
+      "subcategories": [
+        {
+          "name": "Arrays",
+          "link": "arrays"
+        },
+        {
+          "name": "Linked Lists",
+          "link": "linked-lists"
+        },
+        {
+          "name": "Trees",
+          "link": "trees"
+        },
+        {
+          "name": "Balanced Trees",
+          "link": "balanced-trees"
+        },
+        {
+          "name": "Stacks",
+          "link": "stacks"
+        },
+        {
+          "name": "Queues",
+          "link": "queues"
+        },
+        {
+          "name": "Heap",
+          "link": "heap"
+        },
+        {
+          "name": "Disjoint Set",
+          "link": "disjoint-set"
+        },
+        {
+          "name": "Multiple Choice",
+          "link": "multiple-choice"
+        },
+        {
+          "name": "Trie",
+          "link": "trie"
+        },
+        {
+          "name": "Advanced",
+          "link": "data-structures"
+        }
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "folder": "mathematics",
+      "restapi": "mathematics",
+      "subcategories": [
+        {
+          "name": "Fundamentals",
+          "link": "fundamentals"
+        },
+        {
+          "name": "Number Theory",
+          "link": "number-theory"
+        },
+        {
+          "name": "Combinatorics",
+          "link": "combinatorics"
+        },
+        {
+          "name": "Algebra",
+          "link": "algebra"
+        },
+        {
+          "name": "Geometry",
+          "link": "geometry"
+        },
+        {
+          "name": "Probability",
+          "link": "probability"
+        },
+        {
+          "name": "Linear Algebra Foundations",
+          "link": "linear-algebra-foundations"
+        }
+      ]
+    },
+    {
+      "name": "Functional programming",
+      "folder": "fp",
+      "restapi": "fp",
+      "subcategories": [
+        {
+          "name": "Introduction",
+          "link": "intro"
+        },
+        {
+          "name": "Recursion",
+          "link": "fp-recursion"
+        },
+        {
+          "name": "Functional Structures",
+          "link": "ds"
+        },
+        {
+          "name": "Memoization and DP",
+          "link": "dp"
+        },
+        {
+          "name": "Persistent Structures",
+          "link": "persistent-ds"
+        },
+        {
+          "name": "Ad Hoc",
+          "link": "misc"
+        },
+        {
+          "name": "Parsers",
+          "link": "parsers"
+        },
+        {
+          "name": "Interpreter and Compilers",
+          "link": "compilers"
+        }
+      ]
+    }
+  ]
+}

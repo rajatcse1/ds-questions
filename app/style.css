@@ -1,0 +1,8 @@
+/*Bootstrap overide*/
+body {
+    background-color: #eee;
+}
+.jumbotron p{
+	font-size: 12px;
+}
+

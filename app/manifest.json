@@ -1,0 +1,19 @@
+{
+  "name": "app name",
+  "version":"1.0.0",
+  "main": "index.html",
+  "window": {
+    "title": "App Name",
+    "icon": "link.png",
+    "toolbar": true,
+    "frame": true,
+    "resizable": true,
+    "fullscreen": false,
+    "width": 1000,
+    "height": 800,
+    "position": "center"
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

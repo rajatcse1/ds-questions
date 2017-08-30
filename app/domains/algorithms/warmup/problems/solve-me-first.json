@@ -1,0 +1,364 @@
+{
+    "status": true, 
+    "model": {
+        "tagAncestry": [], 
+        "solved_count": 770137, 
+        "can_solve": true, 
+        "clojure_template_head": "; The code is given, you can just Submit!\n;", 
+        "dynamic": true, 
+        "epoch_starttime": null, 
+        "difficulty_name": "Easy", 
+        "sbcl_template": "(defun solveMeFirst (x y)    \n  \t;; Hint: Type (+ x y)) below\n    \n", 
+        "r_template": "write.table(as.numeric(nums[1])+as.numeric(nums[2]), sep = \"\", append=T, row.names = F, col.names = F)", 
+        "compile_and_test": true, 
+        "elixir_template": "defmodule Solution do\n  defp sum(a, b), do: a + b\n\n  def main() do\n    a = IO.gets(\"\") |> String.strip |> String.to_integer\n    b = IO.gets(\"\") |> String.strip |> String.to_integer\n    sum(a, b) |> IO.puts\n  end\nend\n\nSolution.main()\n", 
+        "submit_disabled": false, 
+        "visualbasic_template_head": "Imports System\n\n", 
+        "company_id": null, 
+        "languages": [
+            "ada", 
+            "bash", 
+            "c", 
+            "csharp", 
+            "cpp", 
+            "cpp14", 
+            "clojure", 
+            "coffeescript", 
+            "sbcl", 
+            "d", 
+            "elixir", 
+            "erlang", 
+            "fsharp", 
+            "fortran", 
+            "go", 
+            "groovy", 
+            "haskell", 
+            "java", 
+            "java8", 
+            "javascript", 
+            "julia", 
+            "kotlin", 
+            "lolcode", 
+            "lua", 
+            "ocaml", 
+            "objectivec", 
+            "octave", 
+            "php", 
+            "pascal", 
+            "perl", 
+            "pypy", 
+            "pypy3", 
+            "python", 
+            "python3", 
+            "r", 
+            "racket", 
+            "ruby", 
+            "rust", 
+            "scala", 
+            "smalltalk", 
+            "swift", 
+            "tcl", 
+            "visualbasic", 
+            "whitespace"
+        ], 
+        "leaderboard_out_of_sync_message": null, 
+        "primary_contest": null, 
+        "factor": 1, 
+        "d_template_head": "import std.stdio;", 
+        "pascal_template": "function solveMeFirst(num1, num2: integer): integer;\nvar\n   result: integer;\nbegin\n\t// Hint: Type result := num1+num2; below \n   \n   solveMeFirst := result;\nend;\n\n", 
+        "erlang_template_head": "-module(solution).\n-export([main/0]).", 
+        "smalltalk_template_tail": "input := stdin.\n[input atEnd] whileFalse: [\n    a:= input nextLine asInteger.\n    b:= input nextLine asInteger.\n    res := solveMeFirst value: a value: b\n].\n(res) printNl", 
+        "sbcl_template_tail": "(setq a (read-line))\n(setq b (read-line))\n\n(write (solveMeFirst (parse-integer a) (parse-integer b)))", 
+        "ruby_template_tail": "val1 = gets.to_i\nval2 = gets.to_i\nsum = solveMeFirst(val1,val2)\nprint (sum)", 
+        "default_language": null, 
+        "julia_template": "function solve_me_first(x, y)\n\t\nend", 
+        "leaderboard_out_of_sync": null, 
+        "groovy_template": "def solveMeFirst(a,b) { \n    a+b\n}\n", 
+        "contest_slug": "master", 
+        "python3_template": "def solveMeFirst(a,b):\n\t# Hint: Type return a+b below \n  ", 
+        "name": "Solve Me First", 
+        "level": 0, 
+        "success_ratio": 0.974551027019366, 
+        "total_count": 790248, 
+        "moderator_or_support": false, 
+        "codechecker_handle": null, 
+        "java_template_tail": " public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int a;\n        a = in.nextInt();\n        int b;\n        b = in.nextInt();\n        int sum;\n        sum = solveMeFirst(a, b);\n        System.out.println(sum);\n\t}\n}", 
+        "migrated_resource": null, 
+        "custom_tabs": null, 
+        "fortran_template_tail": "\nPROGRAM main\n    IMPLICIT NONE\n    \n    INTEGER :: val1\n    INTEGER :: val2\n    INTEGER :: solve_me_first\n    \n    READ(*,*) val1\n    READ(*,*) val2\n    WRITE(*,'(i0)') solve_me_first(val1, val2)\nEND PROGRAM main", 
+        "brainfuck_template": "BY: https://www DOT hackerrank DOT com/Vrexu\n\n> Hi there\n> Hi\n> What are you doing?\n> Who? Me? I'm just shifting some bytes to the right in brainfuck\nso my program won't crash\n> Dude!!! You are so weird!\n\nFirst we read the first number and we place it in 4bytes memory\ncells; so it will be of use to us\nSo; at the end we want to have 8 memory cells that look like\n_ _ a a _ b b b\nThis way we can add the coresponding digits properly\n\n_________ 1st Number _________\n\n>>>>_4\n,(----- -----)_10\n[>\n,(----- -----)_10\n[>\n,(----- -----)_10\n[>\n,(----- -----)_10\n[>\n,[-]< we don't want some extra code to mess with out plans; do we?\ncase 1: we have a 4 digits number\n [- <<<<_4 + >>>>_4] 10^0\n<[- <<<<_4 + >>>>_4] 10^1\n<[- <<<<_4 + >>>>_4] 10^2\n<[- <<<<_4 + >>>>_4] 10^3\n>>>]\ncase 2: we have a 3 digits number\n<\n[[- <<<_3 + >>>_3] 10^0\n<[- <<<_3 + >>>_3] 10^1\n<[- <<<_3 + >>>_3] 10^2\n>>]]\ncase 3: we have a 2 digits number\n<\n[[- <<_2 + >>_2] 10^0\n<[- <<_2 + >>_2] 10^1\n>]]\ncase 4: we have an 1 digit number\n<\n[- <_1 + >_1] 10^0\n]\n\nWell; almost perfect! we have 4 cells that look like\n_ _ (a minus 10) (a minus 10)\nLet's leave it like this for now\n\n_________ 2nd Number _________\n\nOn hacker rank; 255s are added at the end of file\nTo make our work even harder; byte wrapping is not allowed\n\nTherefore we go even further away;\n>>>>_4 >>>>_4\n\nHere we set 4 cells with 255\nso that we may mirror the number and determine the EOF\n(+++++)(+++++)(+++++)(+++++)(+++++)_25\n[-\n> (+++++)(+++++)_10 cell 1\n> (+++++)(+++++)_10 cell 2\n> (+++++)(+++++)_10 cell 3\n> (+++++)(+++++)_10 cell 4\n<<<<_4\n]\n> +++++_5\n> +++++_5\n> +++++_5\n> +++++_5\n\n>,>,>,>,\n\n [- <<<<_4 - >>>>_4] cell 4\n<[- <<<<_4 - >>>>_4] cell 3\n<[- <<<<_4 - >>>>_4] cell 2\n<[- <<<<_4 - >>>>_4] cell 1\n<<<<_4\n\nRight now we have something like this\n(255 minus b) (255 minus b) _ _\n\nI would say that it is good enough! We escaped the EOF\nNow we shall do the same thing again; but this time we only\ndo it for the number :)\n\n[\n    if the digit exits; we quickly go and make a 255 4 cells\n    to the left; the traditional way :D\n\n    <<<<_4\n    (+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)_50\n    (+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)_50\n    (+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)_50\n    (+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)_50\n    (+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)(+++++)_50\n    _______________________________________________________________(+++++)__5\n\n    we get back and mirror the digit again\n    >>>>_4\n    [-<<<<->>>>]\n\n    and we do the same for the next digit\n\n    >\n]\n\nAnd there we have it finally\nb b _ _\nNow we only need to shift it properly; Fear not; we can reuse the code\nfrom the first number\n\nTake not that we don't know our exact position right now; Fear not;\nas there is 0 left of the number; we'll have no issues in finding ourselves\n\n< <<<<_4 [<] >\n\nAs a quick reminder; our world now looks like this:\n\n_ _ a1 a2 _ _ _ _ _ b1 b2 _ _\n\nand we are on b1!\n\n[> if b1 we go to b2\n[> if b2 we go to b3\n[> if b3 we go to b4\n\n    [ case 1: we have a 4 digits number\n     [- <<<<_4 + >>>>_4] 10^0\n    <[- <<<<_4 + >>>>_4] 10^1\n    <[- <<<<_4 + >>>>_4] 10^2\n    <[- <<<<_4 + >>>>_4] 10^3\n    >>>]\n\n    case 2: we have a 3 digits number\n    <\n    [[- <<<_3 + >>>_3] 10^0\n    <[- <<<_3 + >>>_3] 10^1\n    <[- <<<_3 + >>>_3] 10^2\n    >>]\n]\n    case 3: we have a 2 digits number\n    <\n    [[- <<_2 + >>_2] 10^0\n    <[- <<_2 + >>_2] 10^1\n    >]\n]\n    case 4: we have an 1 digit number\n    <\n    [- <_1 + >_1] 10^0\n]\n\nWe should be in cell 10 now;\nGreat; now the moment that we were waiting for is here! We will add the numbers!\n\n_________ The Sum! _________\n\nOkay; let's recap what we have until now:\n_ _ (a1 minus 10) (a2 minus 10) _ b1 b2 b3 b4\n\nLet's fix (a)\n\n(<<<<<)(<)_6 cell 4\n[(+++++)(+++++)_10<]\n>[>]<\n\nWe'll simply add the numbers; we will adjust the carriage later\nHere; we also need to subtract 48 from the digits that we add!\n\n[if a4 (>>>>>)_5 [if b_digit >>>>>\n(+++++)(++)_7 [- < (+++++)(++)_7 >]< -  here we add 48 4 cells right of b\n[- <<<< - >>>>] <<<<                    after we subtracted the 48\n[- <<<<<_5 + >>>>>_5 ]                  now there is not b_digit ^_^ \n] (<<<<<)(<)_6 ]                        & repeat until we are out of (a) digits\n\n/* Almost done; but not quite done; We may still have some digits left in b */\n>>>>>_5\n[ if we find any b around here\n[- <<<<< + >>>>>] <\n] no more b\n\n|\\___/|\n\\ o o /\n )>o<(     <<<<\n \\_^_/ \n\n\nWe don't know exactly where we are; but we are at the beginning of our sum\nThat's what matters; after all; isn't it?\n\nTODO:\nThis is not finished yet; I still need to fix the carriage!\n\nHere we print the result ^_^:\n\n[.>]\n", 
+        "is_skip_band_challenge": false, 
+        "tcl_template_head": "# The full code is given, you can just review and submit", 
+        "lolcode_template_head": "HAI 1.2", 
+        "python_template_tail": "\nnum1 = input()\nnum2 = input()\nres = solveMeFirst(num1,num2)\nprint res\n", 
+        "go_template": "func solveMeFirst(a uint32,b uint32) uint32{\n  // Hint: Type return (a+b) below\n}\n\n", 
+        "public_test_cases": true, 
+        "available_translations": [
+            {
+                "body": null, 
+                "problem_statement_fields": {
+                    "sample_output": " ", 
+                    "problem_statement": "\u042d\u0442\u043e \u0432\u0441\u0442\u0443\u043f\u0438\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u0437\u0430\u0434\u0430\u0447\u0430. \u0426\u0435\u043b\u044c\u044e \u044d\u0442\u043e\u0439 \u0437\u0430\u0434\u0430\u0447\u0438 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0432\u0430\u043c \u0440\u0430\u0431\u043e\u0442\u0430\u044e\u0449\u0435\u0433\u043e \u0448\u0430\u0431\u043b\u043e\u043d\u0430 \u0432\u0432\u043e\u0434\u0430/\u0432\u044b\u0432\u043e\u0434\u0430 \u0434\u043b\u044f \u043f\u0440\u0435\u0434\u043f\u043e\u0447\u0438\u0442\u0430\u0435\u043c\u043e\u0433\u043e \u0432\u0430\u043c\u0438 \u044f\u0437\u044b\u043a\u0430. \u041e\u043d\u0430 \u0432\u043a\u043b\u044e\u0447\u0430\u0435\u0442 \u0432 \u0441\u0435\u0431\u044f \u0441\u0447\u0438\u0442\u044b\u0432\u0430\u043d\u0438\u0435 \u0434\u0432\u0443\u0445 \u0446\u0435\u043b\u044b\u0445 \u0447\u0438\u0441\u0435\u043b \u0438\u0437 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u043e\u0433\u043e \u043f\u043e\u0442\u043e\u043a\u0430 \u0432\u0432\u043e\u0434\u0430 (`STDIN`), \u0432\u044b\u0437\u043e\u0432 \u0444\u0443\u043d\u043a\u0446\u0438\u0438, \u0432\u043e\u0437\u0432\u0440\u0430\u0442 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f, \u0438 \u0432\u044b\u0432\u043e\u0434 \u0435\u0433\u043e \u0432 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u044b\u0439 \u043f\u043e\u0442\u043e\u043a \u0432\u044b\u0432\u043e\u0434\u0430 (`STDOUT`).    \n\n\u0417\u0430\u0434\u0430\u043d\u0438\u0435\u043c \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0441\u0447\u0438\u0442\u044b\u0432\u0430\u043d\u0438\u0435 \u0434\u0432\u0443\u0445 \u0447\u0438\u0441\u0435\u043b \u0438\u0437 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u043e\u0433\u043e \u043f\u043e\u0442\u043e\u043a\u0430 \u0432\u0432\u043e\u0434\u0430 \u0438 \u0432\u044b\u0432\u043e\u0434\u0430 \u0438\u0445 \u0441\u0443\u043c\u043c\u044b (A+B) \u0432 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u044b\u0439 \u043f\u043e\u0442\u043e\u043a \u0432\u044b\u0432\u043e\u0434\u0430. \u0414\u043b\u044f \u0431\u043e\u043b\u044c\u0448\u0438\u043d\u0441\u0442\u0432\u0430 \u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u044b\u0445 \u044f\u0437\u044b\u043a\u043e\u0432 \u043a\u043e\u0434 \u0443\u0436\u0435 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d. \u042d\u0442\u043e \u0441\u0434\u0435\u043b\u0430\u043d\u043e \u0434\u043b\u044f \u0442\u043e\u0433\u043e, \u0447\u0442\u043e\u0431\u044b \u0432\u044b \u043c\u043e\u0433\u043b\u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c, \u043a\u0430\u043a \u043e\u0431\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0432\u0432\u043e\u0434/\u0432\u044b\u0432\u043e\u0434.\n\n**\u0417\u0430\u043c\u0435\u0447\u0430\u043d\u0438\u0435**: \u041a\u043e\u0434 \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d \u0432 \u0448\u0430\u0431\u043b\u043e\u043d, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0432\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c, \u0435\u0441\u043b\u0438 \u0445\u043e\u0442\u0438\u0442\u0435. \u0418\u043b\u0438 \u0436\u0435, \u043c\u043e\u0436\u0435\u0442\u0435 \u043f\u043e\u043f\u0440\u043e\u0431\u043e\u0432\u0430\u0442\u044c \u043f\u0435\u0440\u0435\u043f\u0438\u0441\u0430\u0442\u044c \u0435\u0433\u043e \u0441 \u043d\u043e\u043b\u044f. \n\n**\u0424\u043e\u0440\u043c\u0430\u0442 \u0432\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445**  \n\u0412 \u044d\u0442\u043e\u0439 \u0441\u0435\u043a\u0446\u0438\u0438 \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0424\u043e\u0440\u043c\u0430\u0442 \u0432\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445.  \n\u0417\u0430\u0434\u0430\u043d\u044b _A_ \u0438 _B_ \u0432 \u0434\u0432\u0443\u0445 \u0441\u0442\u0440\u043e\u043a\u0430\u0445.  \n\n**\u0424\u043e\u0440\u043c\u0430\u0442 \u0432\u044b\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445**  \n\u0412 \u044d\u0442\u043e\u0439 \u0441\u0435\u043a\u0446\u0438\u0438 \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0424\u043e\u0440\u043c\u0430\u0442 \u0432\u044b\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445.  \n\u0426\u0435\u043b\u043e\u0435 \u0447\u0438\u0441\u043b\u043e, \u0441\u0443\u043c\u043c\u0430 _(A + B)_ \n\n**\u041e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u044f**  \n\u0412 \u044d\u0442\u043e\u0439 \u0441\u0435\u043a\u0446\u0438\u0438 \u0433\u043e\u0432\u043e\u0440\u0438\u0442\u0441\u044f \u043e \u0442\u043e\u043c, \u043a\u0430\u043a\u0438\u0435 \u0432\u0445\u043e\u0434\u043d\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435 \u043c\u043e\u0436\u043d\u043e \u043e\u0436\u0438\u0434\u0430\u0442\u044c. \u041c\u043e\u0436\u0435\u0442\u0435 \u0441\u043c\u0435\u043b\u043e \u043f\u0440\u0435\u0434\u043f\u043e\u043b\u0430\u0433\u0430\u0442\u044c, \u0447\u0442\u043e \u0432\u0445\u043e\u0434\u043d\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435 \u0431\u0443\u0434\u0443\u0442 \u043e\u0441\u0442\u0430\u0432\u0430\u0442\u044c\u0441\u044f \u0432 \u0437\u0430\u0434\u0430\u043d\u043d\u044b\u0445 \u0433\u0440\u0430\u043d\u0438\u0446\u0430\u0445. \u041a\u0430\u043a \u043f\u0440\u0438\u043c\u0435\u0440, \u043f\u0440\u0438\u0432\u0435\u0434\u0451\u043d\u043d\u044b\u0439 \u043d\u0438\u0436\u0435, A \u0438 B \u043d\u0438\u043a\u043e\u0433\u0434\u0430 \u043d\u0435 \u0431\u0443\u0434\u0443\u0442 \u043d\u0438\u0436\u0435 1 \u0438\u043b\u0438 \u0431\u043e\u043b\u044c\u0448\u0435 1000.  \n1 &le; _A_, _B_ &le; 1000\n\n**\u041f\u0440\u0438\u043c\u0435\u0440 \u0432\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445**  \n\n\t2\n    3\n\n**\u041f\u0440\u0438\u043c\u0435\u0440 \u0432\u044b\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445**\n\n\t5\n    \n\u041f\u0440\u0438\u043c\u0435\u0440 \u0441\u0432\u0435\u0440\u0445\u0443 \u0441\u0442\u043e\u0438\u0442 \u0432\u043e\u0441\u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u044c \u0441\u0435\u0440\u044c\u0451\u0437\u043d\u043e. \u0412\u0445\u043e\u0434\u043d\u044b\u043c\u0438 \u0434\u0430\u043d\u043d\u044b\u043c\u0438 \u0431\u0443\u0434\u0443\u0442 2 \u0438 3 \u0432 \u0434\u0432\u0443\u0445 \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u044b\u0445 \u0441\u0442\u0440\u043e\u043a\u0430\u0445. \u0412\u044b\u0445\u043e\u0434\u043d\u044b\u043c\u0438 \u0434\u0430\u043d\u043d\u044b\u043c\u0438 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0434\u043d\u043e \u0447\u0438\u0441\u043b\u043e 5. \u0415\u0441\u043b\u0438 \u0432\u044b \u0432\u044b\u0432\u0435\u0434\u0438\u0442\u0435 \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u0441\u0442\u0440\u043e\u043a\u0438, \u0438\u043b\u0438 \"\u041e\u0442\u0432\u0435\u0442: 5\", \u043b\u044e\u0431\u044b\u0435 \u0442\u0430\u043a\u0438\u0435 \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b \u0432\u043e \u0432\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445 \u043f\u0440\u0438\u0432\u0435\u0434\u0443\u0442 \u043a \u0432\u0435\u0440\u0434\u0438\u043a\u0442\u0443 Wrong Answer (\u041d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043e\u0442\u0432\u0435\u0442), \u0442\u0430\u043a \u043a\u0430\u043a \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u043e\u0441\u0438\u043c\u0432\u043e\u043b\u044c\u043d\u043e.  \n\n", 
+                    "input_format": " ", 
+                    "explanation": " ", 
+                    "sample_input": " ", 
+                    "output_format": " "
+                }, 
+                "name": "  ", 
+                "language": "Russian", 
+                "challenge_id": 2532, 
+                "body_html": "<div class='challenge_problem_statement'><div class='msB challenge_problem_statement_body'><style id=\"MathJax_SVG_styles\">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}\n.MathJax_SVG .MJX-monospace {font-family: monospace}\n.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}\n.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}\n.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}\n.mjx-svg-href {fill: blue; stroke: blue}\n</style><svg style=\"display: none;\"><defs id=\"MathJax_SVG_glyphs\"></defs></svg><p>\u042d\u0442\u043e \u0432\u0441\u0442\u0443\u043f\u0438\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u0437\u0430\u0434\u0430\u0447\u0430. \u0426\u0435\u043b\u044c\u044e \u044d\u0442\u043e\u0439 \u0437\u0430\u0434\u0430\u0447\u0438 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0432\u0430\u043c \u0440\u0430\u0431\u043e\u0442\u0430\u044e\u0449\u0435\u0433\u043e \u0448\u0430\u0431\u043b\u043e\u043d\u0430 \u0432\u0432\u043e\u0434\u0430/\u0432\u044b\u0432\u043e\u0434\u0430 \u0434\u043b\u044f \u043f\u0440\u0435\u0434\u043f\u043e\u0447\u0438\u0442\u0430\u0435\u043c\u043e\u0433\u043e \u0432\u0430\u043c\u0438 \u044f\u0437\u044b\u043a\u0430. \u041e\u043d\u0430 \u0432\u043a\u043b\u044e\u0447\u0430\u0435\u0442 \u0432 \u0441\u0435\u0431\u044f \u0441\u0447\u0438\u0442\u044b\u0432\u0430\u043d\u0438\u0435 \u0434\u0432\u0443\u0445 \u0446\u0435\u043b\u044b\u0445 \u0447\u0438\u0441\u0435\u043b \u0438\u0437 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u043e\u0433\u043e \u043f\u043e\u0442\u043e\u043a\u0430 \u0432\u0432\u043e\u0434\u0430 (<code>STDIN</code>), \u0432\u044b\u0437\u043e\u0432 \u0444\u0443\u043d\u043a\u0446\u0438\u0438, \u0432\u043e\u0437\u0432\u0440\u0430\u0442 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f, \u0438 \u0432\u044b\u0432\u043e\u0434 \u0435\u0433\u043e \u0432 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u044b\u0439 \u043f\u043e\u0442\u043e\u043a \u0432\u044b\u0432\u043e\u0434\u0430 (<code>STDOUT</code>).    </p>\n\n<p>\u0417\u0430\u0434\u0430\u043d\u0438\u0435\u043c \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0441\u0447\u0438\u0442\u044b\u0432\u0430\u043d\u0438\u0435 \u0434\u0432\u0443\u0445 \u0447\u0438\u0441\u0435\u043b \u0438\u0437 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u043e\u0433\u043e \u043f\u043e\u0442\u043e\u043a\u0430 \u0432\u0432\u043e\u0434\u0430 \u0438 \u0432\u044b\u0432\u043e\u0434\u0430 \u0438\u0445 \u0441\u0443\u043c\u043c\u044b (A+B) \u0432 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u044b\u0439 \u043f\u043e\u0442\u043e\u043a \u0432\u044b\u0432\u043e\u0434\u0430. \u0414\u043b\u044f \u0431\u043e\u043b\u044c\u0448\u0438\u043d\u0441\u0442\u0432\u0430 \u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u044b\u0445 \u044f\u0437\u044b\u043a\u043e\u0432 \u043a\u043e\u0434 \u0443\u0436\u0435 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d. \u042d\u0442\u043e \u0441\u0434\u0435\u043b\u0430\u043d\u043e \u0434\u043b\u044f \u0442\u043e\u0433\u043e, \u0447\u0442\u043e\u0431\u044b \u0432\u044b \u043c\u043e\u0433\u043b\u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c, \u043a\u0430\u043a \u043e\u0431\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0432\u0432\u043e\u0434/\u0432\u044b\u0432\u043e\u0434.</p>\n\n<p><strong>\u0417\u0430\u043c\u0435\u0447\u0430\u043d\u0438\u0435</strong>: \u041a\u043e\u0434 \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d \u0432 \u0448\u0430\u0431\u043b\u043e\u043d, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0432\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c, \u0435\u0441\u043b\u0438 \u0445\u043e\u0442\u0438\u0442\u0435. \u0418\u043b\u0438 \u0436\u0435, \u043c\u043e\u0436\u0435\u0442\u0435 \u043f\u043e\u043f\u0440\u043e\u0431\u043e\u0432\u0430\u0442\u044c \u043f\u0435\u0440\u0435\u043f\u0438\u0441\u0430\u0442\u044c \u0435\u0433\u043e \u0441 \u043d\u043e\u043b\u044f. </p>\n\n<p><strong>\u0424\u043e\u0440\u043c\u0430\u0442 \u0432\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445</strong> <br>\n\u0412 \u044d\u0442\u043e\u0439 \u0441\u0435\u043a\u0446\u0438\u0438 \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0424\u043e\u0440\u043c\u0430\u0442 \u0432\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445. <br>\n\u0417\u0430\u0434\u0430\u043d\u044b <em>A</em> \u0438 <em>B</em> \u0432 \u0434\u0432\u0443\u0445 \u0441\u0442\u0440\u043e\u043a\u0430\u0445.  </p>\n\n<p><strong>\u0424\u043e\u0440\u043c\u0430\u0442 \u0432\u044b\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445</strong> <br>\n\u0412 \u044d\u0442\u043e\u0439 \u0441\u0435\u043a\u0446\u0438\u0438 \u043e\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0424\u043e\u0440\u043c\u0430\u0442 \u0432\u044b\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445. <br>\n\u0426\u0435\u043b\u043e\u0435 \u0447\u0438\u0441\u043b\u043e, \u0441\u0443\u043c\u043c\u0430 <em>(A + B)</em> </p>\n\n<p><strong>\u041e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u044f</strong> <br>\n\u0412 \u044d\u0442\u043e\u0439 \u0441\u0435\u043a\u0446\u0438\u0438 \u0433\u043e\u0432\u043e\u0440\u0438\u0442\u0441\u044f \u043e \u0442\u043e\u043c, \u043a\u0430\u043a\u0438\u0435 \u0432\u0445\u043e\u0434\u043d\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435 \u043c\u043e\u0436\u043d\u043e \u043e\u0436\u0438\u0434\u0430\u0442\u044c. \u041c\u043e\u0436\u0435\u0442\u0435 \u0441\u043c\u0435\u043b\u043e \u043f\u0440\u0435\u0434\u043f\u043e\u043b\u0430\u0433\u0430\u0442\u044c, \u0447\u0442\u043e \u0432\u0445\u043e\u0434\u043d\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435 \u0431\u0443\u0434\u0443\u0442 \u043e\u0441\u0442\u0430\u0432\u0430\u0442\u044c\u0441\u044f \u0432 \u0437\u0430\u0434\u0430\u043d\u043d\u044b\u0445 \u0433\u0440\u0430\u043d\u0438\u0446\u0430\u0445. \u041a\u0430\u043a \u043f\u0440\u0438\u043c\u0435\u0440, \u043f\u0440\u0438\u0432\u0435\u0434\u0451\u043d\u043d\u044b\u0439 \u043d\u0438\u0436\u0435, A \u0438 B \u043d\u0438\u043a\u043e\u0433\u0434\u0430 \u043d\u0435 \u0431\u0443\u0434\u0443\u0442 \u043d\u0438\u0436\u0435 1 \u0438\u043b\u0438 \u0431\u043e\u043b\u044c\u0448\u0435 1000. <br>\n1 \u2264 <em>A</em>, <em>B</em> \u2264 1000</p>\n\n<p><strong>\u041f\u0440\u0438\u043c\u0435\u0440 \u0432\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445</strong>  </p>\n\n<pre><code>2\n3\n</code></pre>\n\n<p><strong>\u041f\u0440\u0438\u043c\u0435\u0440 \u0432\u044b\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445</strong></p>\n\n<pre><code>5\n</code></pre>\n\n<p>\u041f\u0440\u0438\u043c\u0435\u0440 \u0441\u0432\u0435\u0440\u0445\u0443 \u0441\u0442\u043e\u0438\u0442 \u0432\u043e\u0441\u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u044c \u0441\u0435\u0440\u044c\u0451\u0437\u043d\u043e. \u0412\u0445\u043e\u0434\u043d\u044b\u043c\u0438 \u0434\u0430\u043d\u043d\u044b\u043c\u0438 \u0431\u0443\u0434\u0443\u0442 2 \u0438 3 \u0432 \u0434\u0432\u0443\u0445 \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u044b\u0445 \u0441\u0442\u0440\u043e\u043a\u0430\u0445. \u0412\u044b\u0445\u043e\u0434\u043d\u044b\u043c\u0438 \u0434\u0430\u043d\u043d\u044b\u043c\u0438 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0434\u043d\u043e \u0447\u0438\u0441\u043b\u043e 5. \u0415\u0441\u043b\u0438 \u0432\u044b \u0432\u044b\u0432\u0435\u0434\u0438\u0442\u0435 \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u0441\u0442\u0440\u043e\u043a\u0438, \u0438\u043b\u0438 \"\u041e\u0442\u0432\u0435\u0442: 5\", \u043b\u044e\u0431\u044b\u0435 \u0442\u0430\u043a\u0438\u0435 \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b \u0432\u043e \u0432\u0445\u043e\u0434\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445 \u043f\u0440\u0438\u0432\u0435\u0434\u0443\u0442 \u043a \u0432\u0435\u0440\u0434\u0438\u043a\u0442\u0443 Wrong Answer (\u041d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u043e\u0442\u0432\u0435\u0442), \u0442\u0430\u043a \u043a\u0430\u043a \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043f\u043e\u0441\u0438\u043c\u0432\u043e\u043b\u044c\u043d\u043e.  </p></div></div>", 
+                "preview": "         /."
+            }
+        ], 
+        "clojure_template_tail": "\n(def a (read-line))\n(def b (read-line))\n\n(println (solveMeFirst (Integer/parseInt a) (Integer/parseInt b)))", 
+        "cpp_template": "int solveMeFirst(int a, int b) {\n // Hint: Type return a+b; below:\n  \n}", 
+        "ada_template": "procedure Solution is\n\nfunction solveMeFirst (a, b: Integer) return Integer is\nbegin\n   -- Hint: Type return a+b; below\n   \nend solveMeFirst;\n\na, b, sum: Integer;\nbegin\n    Get (a); \n    Get (b);\n    sum := solveMeFirst(a, b);  \n    Put (sum, Width => 1);\n\nend Solution;", 
+        "c_template_tail": "int main() {\n    int num1,num2;\n    scanf(\"%d %d\",&num1,&num2);\n    int sum; \n    sum = solveMeFirst(num1,num2);\n    printf(\"%d\",sum);\n    return 0;\n}", 
+        "cpp_template_tail": "int main() {\n  int num1, num2;\n  int sum;\n  cin>>num1>>num2;\n  sum = solveMeFirst(num1,num2);\n  cout<<sum;\n  return 0;\n}", 
+        "category": "ai", 
+        "visualbasic_template_tail": "\tPublic Shared Sub Main()\n\t\tDim a As Integer \n        Dim b As Integer \n        Dim res As Integer \n        a = Console.Readline() \n        b = Console.Readline() \n        res = solveMeFirst(a,b)\n        Console.WriteLine(\"{0}\",res)\n\tEnd Sub\nEnd Module", 
+        "haskell_template_tail": "main = do\n    val1 <- readLn\n    val2 <- readLn\n    let sum = solveMeFirst val1 val2\n    print sum", 
+        "php_template": "function solveMeFirst($a,$b){\n  // Hint: Type return $a + $b; below  \n  \n}", 
+        "perl_template": "sub solveMeFirst{\n    ($x,$y) = @_; \n    # Hint: Type $res = $x + $y; below \n    \n    return $res ;   \n}\n\n", 
+        "kotlin_template": "import java.util.*\n\nfun solveMeFirst(a: Int, b: Int): Int {\n    \n}\n\nfun main(args: Array<String>) {\n    val sc = Scanner(System.`in`)\n    val num1 = sc.nextInt()\n    val num2 = sc.nextInt()\n    val sum = solveMeFirst(num1, num2)\n    println(sum)\n}", 
+        "fsharp_template_head": "// The entire code is given, you can just review and submit!", 
+        "can_be_viewed": true, 
+        "fsharp_template": "open System\n\n[<EntryPoint>]\nlet main argv = \n    let a = Console.ReadLine() |> int\n    let b = Console.ReadLine() |> int\n    printfn \"%d\" (a+b)\n    0 // return an integer exit code", 
+        "rust_template": "fn main() {\n    // variable declaration\n    let mut _num_str_1 = String::new();\n    let mut _num_str_2 = String::new();\n\n    // read variables\n    io::stdin().read_line(&mut _num_str_1).ok().expect(\"read error\");\n    io::stdin().read_line(&mut _num_str_2).ok().expect(\"read error\");\n\n    // parse integers\n    let mut _num_1 : i32 = _num_str_1.trim().parse().ok().expect(\"parse error\");\n    let mut _num_2 : i32 = _num_str_2.trim().parse().ok().expect(\"parse error\");\n\n    // print the sum\n    // Hint: Type println!(\"{}\", _num_1 + _num_2); below \n\n}", 
+        "lolcode_template_tail": "I HAS A Num1\nI HAS A Num2\nI HAS A Res\nGIMMEH Num1\nGIMMEH Num2\nRes R I IZ SOLVEMEFIRST YR Num1 AN YR Num2 MKAY\nVISIBLE Res\nKTHXBYE", 
+        "cpp14_template_head": "#include <cmath>\n#include <cstdio>\n#include <vector>\n#include <iostream>\n#include <algorithm>\nusing namespace std;\n\n\n", 
+        "public_solutions": true, 
+        "r_template_head": "# The complete code is given. You can just review and submit!\nnums <- read.table(\"/dev/stdin\", sep=\" \");\nnums <- as.list(as.data.frame(t(nums)))", 
+        "c_template_head": "#include <stdio.h>\n#include <string.h>\n#include <math.h>\n#include <stdlib.h>\n\n\n", 
+        "deleted": false, 
+        "real_dynamic": false, 
+        "php_template_tail": "$handle = fopen (\"php://stdin\",\"r\");\n$_a = fgets($handle);\n$_b = fgets($handle);\n$sum = solveMeFirst((int)$_a,(int)$_b);\nprint ($sum);\nfclose($handle);\n?>", 
+        "julia_template_tail": "# Enter your code here \n\n\nx = parse(Int, readline(STDIN))\ny = parse(Int, readline(STDIN))\nprintln(solve_me_first(x, y))\n", 
+        "difficulty_score": "0.005", 
+        "difficulty": 0.9950288377707732, 
+        "pascal_template_head": "Program solveMeFirst;", 
+        "racket_template_head": "#lang racket\n", 
+        "java8_template_head": "import java.io.*;\nimport java.util.*;\nimport java.text.*;\nimport java.math.*;\nimport java.util.regex.*;\n\npublic class Solution {\n", 
+        "active": true, 
+        "pypy_template": "def solveMeFirst(a,b):\n\t# Hint: Type return a+b below \n  \n\n", 
+        "pypy3_template": "def solveMeFirst(a,b):\n\t# Hint: Type return a+b below \n  ", 
+        "slug": "solve-me-first", 
+        "show_skeliton": null, 
+        "player_count": 2, 
+        "is_preview_contest": false, 
+        "is_editorial_available": true, 
+        "submitted_hackers_count": 790248, 
+        "epoch_endtime": null, 
+        "cpp_template_head": "#include <cmath>\n#include <cstdio>\n#include <vector>\n#include <iostream>\n#include <algorithm>\nusing namespace std;\n\n\n", 
+        "perl_template_tail": "\n$choice1 = <STDIN> ;\n$choice2 = <STDIN> ;\n$res = solveMeFirst($choice1 , $choice2);\nprint \"$res\" ;", 
+        "racket_template": "#lang racket\n\n(define (sum-of-two-integers a b)\n  ; Hint: Type (+ a b)) below \n  \n\n(let ([a (read)]\n      [b (read)])\n  (printf \"~a~%\" (sum-of-two-integers a b)))\n", 
+        "author_avatar": "https://hrcdn.net/s3_pub/hr-avatars/e013db60-c4d5-4fe3-a322-82ab33c96a8c/150x150.png", 
+        "judgebot_language": null, 
+        "ada_template_head": "-- Enter your code here. Read input from STDIN. Print output to STDOUT\nwith Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO;\nuse Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO;", 
+        "php_template_head": "<?php", 
+        "java_template": "\n\n    static int solveMeFirst(int a, int b) {\n      // Hint: Type return a+b; below\n      \n\t}\n\n   ", 
+        "python3_template_tail": "\nnum1 = int(input())\nnum2 = int(input())\nres = solveMeFirst(num1,num2)\nprint(res)\n", 
+        "python_template": "def solveMeFirst(a,b):\n\t# Hint: Type return a+b below \n  \n\n", 
+        "groovy_template_tail": "\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in))\ndef a = Integer.parseInt(br.readLine())\ndef b = Integer.parseInt(br.readLine())\ndef res = solveMeFirst(a,b)\nprintln res", 
+        "color": null, 
+        "has_all_test_cases_public": false, 
+        "time_left": null, 
+        "scala_template": "object Solution {\n\n    def main(args: Array[String]) {\n        println(io.Source.stdin.getLines().take(2).map(_.toInt).sum)\n    }\n}", 
+        "octave_template_head": "# Enter your code here. Read input from STDIN. Print output to STDOUT\na = input(\"\");\nb = input(\"\");\n", 
+        "d_template": "int solveMeFirst (int a,int b) {\n    // Hint: Type return a+b below \n  \treturn a+b;\n}\n \n", 
+        "kind": "code", 
+        "swift_template_head": "// read integers line by line", 
+        "is_custom": false, 
+        "ruby_template": "def solveMeFirst (a, b)\n  # Hint: Type return a+b below   \n  \nend", 
+        "haskell_template": "solveMeFirst a b = a + b\n\n", 
+        "java8_template": "\n    static int solveMeFirst(int a, int b) {\n      \t// Hint: Type return a+b; below \n\n   }\n\n   \n", 
+        "solved_score": 0.5, 
+        "expert_solution_status": false, 
+        "objectivec_template_tail": "int main (int argc, const char * argv[]) {\n    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];\n    int a,b,res;\n    scanf(\"%d %d\", &a, &b);\n    res = solveMeFirst(a,b);\n    printf(\"%d\", res);\n    [pool drain];\n    return 0;\n}", 
+        "custom": false, 
+        "tcl_template_tail": "set a [gets stdin]\nset b [gets stdin]\nset res [sum $a $b]\nputs $res", 
+        "lolcode_template": "\nHOW IZ I SOLVEMEFIRST YR NUM1 AN YR NUM2\n  FOUND YR SUM OF NUM1 AN NUM2\nIF U SAY SO\n\n", 
+        "go_template_tail": "func main() {\n    var a, b, res uint32\n    fmt.Scanf(\"%v\\n%v\", &a,&b)\n    res = solveMeFirst(a,b)\n    fmt.Println(res)\n}", 
+        "preview": "This is an easy challenge to help you start coding in your favorite languages!", 
+        "cpp14_template_tail": "int main() {\n    int num1, num2;\n    int sum;\n    cin>>num1>>num2;\n    sum = solveMeFirst(num1,num2);\n    cout<<sum;\n    return 0;\n}", 
+        "pypy_template_tail": "\nnum1 = input()\nnum2 = input()\nres = solveMeFirst(num1,num2)\nprint res\n", 
+        "d_template_tail": "void main()\n{\n    int a,b,res;\n    readf(\"%d %d\", &a,&b);\n    res = solveMeFirst(a,b);\n    writeln(res);\n}", 
+        "company": null, 
+        "is_text": false, 
+        "octave_template": "printf(\"%d\", a+b);", 
+        "clojure_template": "(defn solveMeFirst [x y]    \n    (+ x y))\n\n", 
+        "java_template_head": "import java.io.*;\nimport java.util.*;\nimport java.text.*;\nimport java.math.*;\nimport java.util.regex.*;\n\npublic class Solution {", 
+        "bash_template": "read a\nread b\necho $(($a + $b))\n", 
+        "require_unlock": true, 
+        "erlang_template_tail": "main() -> \n    {ok, [A, B]} = io:fread(\"\", \"~d~d\"),\n    Res = solveMeFirst(A,B),\n    io:format(\"~p~n\",[Res]).", 
+        "csharp_template": "    static int solveMeFirst(int a, int b) { \n      // Hint: Type return a+b; below  \n      \n    }", 
+        "tcl_template": "proc sum {a b} {\n    expr {$a+$b}\n}\n\n", 
+        "has_started": true, 
+        "erlang_template": "solveMeFirst(A, B) ->\n    A + B.", 
+        "judgebot": null, 
+        "swift_template_tail": "\n// Hint: Type print(a + b) below", 
+        "custom_checker_language": null, 
+        "custom_case": true, 
+        "fortran_template": "! Enter your code here. Read input from STDIN. Print output to STDOUT\nFUNCTION solve_me_first(val1, val2)\n    INTEGER :: solve_me_first\n    INTEGER :: val1\n    INTEGER :: val2\n    ! Hint: Type solve_me_first = val1 + val2\n    RETURN\nEND FUNCTION", 
+        "cpp14_template": "int solveMeFirst(int a, int b) {\n    // Hint: Type return a+b; below\n  \n}", 
+        "topics": [], 
+        "ocaml_template": "let () =\n    let a = read_int() in\n    let b = read_int() in\n    (* Hint: Type print_int(a+b); below *)\n    ", 
+        "updated_at": "2017-08-02T13:15:46.000Z", 
+        "author_name": "shashank21j", 
+        "onboarding": {
+            "fsharp": {
+                "solution": "open System\n\n[<EntryPoint>]\nlet main argv = \n    let a = Console.ReadLine() |> int\n    let b = Console.ReadLine() |> int\n    printfn \"%d\" (a+b)\n    0 // return an integer exit code\n", 
+                "template": "open System\n\n[<EntryPoint>]\nlet main argv = \n    let a = Console.ReadLine() |> int\n    let b = Console.ReadLine() |> int\n    // print the sum\n    0 // return an integer exit code\n"
+            }, 
+            "pascal": {
+                "solution": "Program solveMeFirst;\nfunction solveMeFirst(num1, num2: integer): integer;\nvar\n   result: integer;\nbegin\n   result := num1+num2;\n   solveMeFirst := result;\nend;\n\nvar A : integer;\n    B : integer;\n    Res : integer;\nbegin\n  Readln (A);\n  Readln (B);\n  Res := solveMeFirst(A,B);\n  WriteLn(Res);\nend.\n", 
+                "template": "Program solveMeFirst;\nfunction solveMeFirst(num1, num2: integer): integer;\nvar\n   result: integer;\nbegin\n\nend;\n\nvar A : integer;\n    B : integer;\n    Res : integer;\nbegin\n  Readln (A);\n  Readln (B);\n  Res := solveMeFirst(A,B);\n  WriteLn(Res);\nend.\n"
+            }, 
+            "haskell": {
+                "solution": "solveMeFirst a b = a + b\n\nmain = do\n    val1 <- readLn\n    val2 <- readLn\n    let sum = solveMeFirst val1 val2\n    print sum\n", 
+                "template": "solveMeFirst a b =\n\nmain = do\n    val1 <- readLn\n    val2 <- readLn\n    let sum = solveMeFirst val1 val2\n    print sum\n"
+            }, 
+            "csharp": {
+                "solution": "using System;\nusing System.Collections.Generic;\nusing System.IO;\nclass Solution {\n    static int solveMeFirst(int a, int b) { \n        return a+b;\n    }\n    static void Main(String[] args) {\n        int val1 = Convert.ToInt32(Console.ReadLine());\n        int val2 = Convert.ToInt32(Console.ReadLine());\n        int sum = solveMeFirst(val1,val2);\n        Console.WriteLine(sum);\n    }\n}      \n", 
+                "template": "using System;\nusing System.Collections.Generic;\nusing System.IO;\nclass Solution {\n    static int solveMeFirst(int a, int b) { \n\n    }\n    static void Main(String[] args) {\n        int val1 = Convert.ToInt32(Console.ReadLine());\n        int val2 = Convert.ToInt32(Console.ReadLine());\n        int sum = solveMeFirst(val1,val2);\n        Console.WriteLine(sum);\n    }\n}      \n"
+            }, 
+            "go": {
+                "solution": "package main\nimport \"fmt\"\n\nfunc solveMeFirst(a uint32,b uint32) uint32{\n    return (a+b)\n}\n\nfunc main() {\n    var a, b, res uint32\n    fmt.Scanf(\"%v %v\", &a,&b)\n    res = solveMeFirst(a,b)\n    fmt.Println(res)\n}\n", 
+                "template": "package main\nimport \"fmt\"\n\nfunc solveMeFirst(a uint32,b uint32) uint32{\n\n}\n\nfunc main() {\n    var a, b, res uint32\n    fmt.Scanf(\"%v %v\", &a,&b)\n    res = solveMeFirst(a,b)\n    fmt.Println(res)\n}\n"
+            }, 
+            "smalltalk": {
+                "solution": "solveMeFirst := [ :num1 :num2 | \n    num1 + num2 \n].\n\n\ninput := stdin.\n[input atEnd] whileFalse: [\n    a:= input nextLine asInteger.\n    b:= input nextLine asInteger.\n    res := solveMeFirst value: a value: b\n].\n(res) printNl\n", 
+                "template": "solveMeFirst := [ :num1 :num2 | \n\n].\n\n\ninput := stdin.\n[input atEnd] whileFalse: [\n    a:= input nextLine asInteger.\n    b:= input nextLine asInteger.\n    res := solveMeFirst value: a value: b\n].\n(res) printNl\n"
+            }, 
+            "java": {
+                "solution": "import java.io.*;\nimport java.util.*;\nimport java.text.*;\nimport java.math.*;\nimport java.util.regex.*;\n\npublic class Solution {\n\n\n    static int solveMeFirst(int a, int b) {\n        return a+b;\n   }\n\n   \n public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int _a;\n        _a = in.nextInt();\n        int _b;\n        _b = in.nextInt();\n        int sum;\n        sum = solveMeFirst(_a, _b);\n        System.out.println(sum);\n   }\n}\n", 
+                "template": "import java.io.*;\nimport java.util.*;\nimport java.text.*;\nimport java.math.*;\nimport java.util.regex.*;\n\npublic class Solution {\n\n\n    static int solveMeFirst(int a, int b) {\n   }\n\n   \n public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int _a;\n        _a = in.nextInt();\n        int _b;\n        _b = in.nextInt();\n        int sum;\n        sum = solveMeFirst(_a, _b);\n        System.out.println(sum);\n   }\n}\n"
+            }, 
+            "lolcode": {
+                "solution": "HAI 1.2\n\nHOW IZ I SOLVEMEFIRST YR NUM1 AN YR NUM2\n  FOUND YR SUM OF NUM1 AN NUM2\nIF U SAY SO\n\nI HAS A Num1\nI HAS A Num2\nI HAS A Res\nGIMMEH Num1\nGIMMEH Num2\nRes R I IZ SOLVEMEFIRST YR Num1 AN YR Num2 MKAY\nVISIBLE Res\nKTHXBYE\n", 
+                "template": "HAI 1.2\n\nHOW IZ I SOLVEMEFIRST YR NUM1 AN YR NUM2\n\nIF U SAY SO\n\nI HAS A Num1\nI HAS A Num2\nI HAS A Res\nGIMMEH Num1\nGIMMEH Num2\nRes R I IZ SOLVEMEFIRST YR Num1 AN YR Num2 MKAY\nVISIBLE Res\nKTHXBYE\n"
+            }, 
+            "scala": {
+                "solution": "object Solution {\n\n    def main(args: Array[String]) {\n        println(io.Source.stdin.getLines().take(2).map(_.toInt).sum)\n    }\n}\n", 
+                "template": "object Solution {\n    \n    def solveMeFirst (a: Int, b: Int): Int = {\n\n    }\n\n    def main(args: Array[String]) {\n        var a:Int = Console.readInt\n        var b:Int = Console.readInt\n        println(solveMeFirst(a, b))\n    }\n}\n"
+            }, 
+            "perl": {
+                "solution": "sub solveMeFirst{\n    ($x,$y) = @_;   \n    $res = $x + $y ;\n    return $res ;   \n}\n\n\n$choise1 = <STDIN> ;\n$choise2 = <STDIN> ;\n$res = solveMeFirst($choise1 , $choise2);\nprint \"$res\" ;\n", 
+                "template": "sub solveMeFirst{\n    ($x,$y) = @_;\n    \n}\n\n\n$choise1 = <STDIN> ;\n$choise2 = <STDIN> ;\n$res = solveMeFirst($choise1 , $choise2);\nprint \"$res\" ;\n"
+            }, 
+            "lua": {
+                "solution": "solveMeFirst = function(a,b)\n    return a+b\nend\n\n    \na = io.read(\"*number\")\nb = io.read(\"*number\")\nres = solveMeFirst(a,b)\nprint (res)\n", 
+                "template": "solveMeFirst = function(a,b)\n\nend\n\n    \na = io.read(\"*number\")\nb = io.read(\"*number\")\nres = solveMeFirst(a,b)\nprint (res)\n"
+            }, 
+            "sbcl": {
+                "solution": "(defun solveMeFirst (x y)    \n    (+ x y))\n(setq a (read-line))\n(setq b (read-line))\n\n(write (solveMeFirst (parse-integer a) (parse-integer b)))\n", 
+                "template": "(defun solveMeFirst (x y)    \n    )\n(setq a (read-line))\n(setq b (read-line))\n\n(write (solveMeFirst (parse-integer a) (parse-integer b)))\n"
+            }, 
+            "statement": "Complete the function solveMeFirst which takes two integers and returns their sum.", 
+            "objectivec": {
+                "solution": "#import <Foundation/Foundation.h>\nint solveMeFirst(int a, int b) { \n    return a+b;\n}\n \nint main (int argc, const char * argv[]) {\n    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];\n    int a,b,res;\n    scanf(\"%d %d\", &a, &b);\n    res = solveMeFirst(a,b);\n    printf(\"%d\", res);\n    [pool drain];\n    return 0;\n}\n", 
+                "template": "#import <Foundation/Foundation.h>\nint solveMeFirst(int a, int b) { \n\n}\n \nint main (int argc, const char * argv[]) {\n    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];\n    int a,b,res;\n    scanf(\"%d %d\", &a, &b);\n    res = solveMeFirst(a,b);\n    printf(\"%d\", res);\n    [pool drain];\n    return 0;\n}\n"
+            }, 
+            "erlang": {
+                "solution": "-module(solution).\n-export([main/0]).\nsolveMeFirst(A, B) ->\n    A + B.\nmain() -> \n    {ok, [A, B]} = io:fread(\"\", \"~d~d\"),\n    Res = solveMeFirst(A,B),\n    io:format(\"~p~n\",[Res]).\n", 
+                "template": "-module(solution).\n-export([main/0]).\nsolveMeFirst(A, B) ->\n    \nmain() -> \n    {ok, [A, B]} = io:fread(\"\", \"~d~d\"),\n    Res = solveMeFirst(A,B),\n    io:format(\"~p~n\",[Res]).\n"
+            }, 
+            "python": {
+                "solution": "def solveMeFirst(a,b):\n  return a+b\n\n\nnum1 = input()\nnum2 = input()\nres = solveMeFirst(num1,num2)\nprint res\n", 
+                "template": "def solveMeFirst(a,b):\n    \n\n\nnum1 = input()\nnum2 = input()\nres = solveMeFirst(num1,num2)\nprint res\n"
+            }, 
+            "javascript": {
+                "solution": "process.stdin.resume();\nprocess.stdin.setEncoding('ascii');\n\nvar __input_stdin = \"\";\nvar __input_stdin_array = \"\";\nvar __input_currentline = 0;\n\nprocess.stdin.on('data', function (data) {\n    __input_stdin += data;\n});\n\nfunction solveMeFirst(a, b) {\n    return a+b;\n}\nprocess.stdin.on('end', function () {\n    __input_stdin_array = __input_stdin.split(\"\\n\");\n    var res;\n    var _a = parseInt(__input_stdin_array[__input_currentline].trim(), 10);\n    __input_currentline += 1;\n    \n    var _b = parseInt(__input_stdin_array[__input_currentline].trim(), 10);\n    __input_currentline += 1;\n    \n    res = solveMeFirst(_a, _b);\n    process.stdout.write(\"\"+res+\"\\n\");\n    \n});\n", 
+                "template": "process.stdin.resume();\nprocess.stdin.setEncoding('ascii');\n\nvar __input_stdin = \"\";\nvar __input_stdin_array = \"\";\nvar __input_currentline = 0;\n\nprocess.stdin.on('data', function (data) {\n    __input_stdin += data;\n});\n\nfunction solveMeFirst(a, b) {\n\n}\nprocess.stdin.on('end', function () {\n    __input_stdin_array = __input_stdin.split(\"\\n\");\n    var res;\n    var _a = parseInt(__input_stdin_array[__input_currentline].trim(), 10);\n    __input_currentline += 1;\n    \n    var _b = parseInt(__input_stdin_array[__input_currentline].trim(), 10);\n    __input_currentline += 1;\n    \n    res = solveMeFirst(_a, _b);\n    process.stdout.write(\"\"+res+\"\\n\");\n    \n});\n"
+            }, 
+            "php": {
+                "solution": "<?php\nfunction solveMeFirst($a,$b){\n    return $a + $b;\n}\n$handle = fopen (\"php://stdin\",\"r\");\n$_a = fgets($handle);\n$_b = fgets($handle);\n$sum = solveMeFirst((int)$_a,(int)$_b);\nprint ($sum);\nfclose($handle);\n?>\n", 
+                "template": "<?php\nfunction solveMeFirst($a,$b){\n}\n$handle = fopen (\"php://stdin\",\"r\");\n$_a = fgets($handle);\n$_b = fgets($handle);\n$sum = solveMeFirst((int)$_a,(int)$_b);\nprint ($sum);\nfclose($handle);\n?>\n"
+            }, 
+            "ruby": {
+                "solution": "def solveMeFirst (a, b)\n    return a+b\nend\nval1 = gets.to_i\nval2 = gets.to_i\nsum = solveMeFirst(val1,val2)\nprint (sum)\n", 
+                "template": "def solveMeFirst (a, b)\n\nend\nval1 = gets.to_i\nval2 = gets.to_i\nsum = solveMeFirst(val1,val2)\nprint (sum)\n"
+            }, 
+            "python3": {
+                "solution": "def solveMeFirst(a,b):\n  return a+b\n\nnum1 = int(input())\nnum2 = int(input())\nres = solveMeFirst(num1,num2)\nprint (res)\n", 
+                "template": "def solveMeFirst(a,b):\n  \n\nnum1 = int(input())\nnum2 = int(input())\nres = solveMeFirst(num1,num2)\nprint (res)\n"
+            }, 
+            "visualbasic": {
+                "solution": "Imports System\n\n\nModule Solution\n    Function solveMeFirst(ByVal a,b As Integer) As Integer\n        Return a+b\n    End Function\n    \n   Public Shared Sub Main()\n      Dim a As Integer \n        Dim b As Integer \n        Dim res As Integer \n        a = Console.Readline() \n        b = Console.Readline() \n        res = solveMeFirst(a,b)\n        Console.WriteLine(\"{0}\",res)\n   End Sub\nEnd Module\n", 
+                "template": "Imports System\n\n\nModule Solution\n    Function solveMeFirst(ByVal a,b As Integer) As Integer\n\n    End Function\n    \n   Public Shared Sub Main()\n      Dim a As Integer \n        Dim b As Integer \n        Dim res As Integer \n        a = Console.Readline() \n        b = Console.Readline() \n        res = solveMeFirst(a,b)\n        Console.WriteLine(\"{0}\",res)\n   End Sub\nEnd Module\n"
+            }, 
+            "groovy": {
+                "solution": "def solveMeFirst(a,b) { \n    a+b\n}\n\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in))\ndef a = Integer.parseInt(br.readLine())\ndef b = Integer.parseInt(br.readLine())\ndef res = solveMeFirst(a,b)\nprintln res\n", 
+                "template": "def solveMeFirst(a,b) { \n\n}\n\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in))\ndef a = Integer.parseInt(br.readLine())\ndef b = Integer.parseInt(br.readLine())\ndef res = solveMeFirst(a,b)\nprintln res\n"
+            }, 
+            "c": {
+                "solution": "#include <stdio.h>\n#include <string.h>\n#include <math.h>\n#include <stdlib.h>\n\n\nint solveMeFirst(int a, int b) {\n  return a+b;\n}\nint main() {\n  int num1,num2;\n  scanf(\"%d %d\",&num1,&num2);\n  int sum; \n  sum = solveMeFirst(num1,num2);\n  printf(\"%d\",sum);\n  return 0;\n}\n", 
+                "template": "#include <stdio.h>\n#include <string.h>\n#include <math.h>\n#include <stdlib.h>\n\n\nint solveMeFirst(int a, int b) {\n  \n}\nint main() {\n  int num1,num2;\n  scanf(\"%d %d\",&num1,&num2);\n  int sum; \n  sum = solveMeFirst(num1,num2);\n  printf(\"%d\",sum);\n  return 0;\n}\n"
+            }, 
+            "d": {
+                "solution": "import std.stdio;\nint solveMeFirst (int a,int b) {\n    return a+b;\n}\n \nvoid main()\n{\n    int a,b,res;\n    readf(\"%d %d\", &a,&b);\n    res = solveMeFirst(a,b);\n    writeln(res);\n}\n", 
+                "template": "import std.stdio;\nint solveMeFirst (int a,int b) {\n\n}\n \nvoid main()\n{\n    int a,b,res;\n    readf(\"%d %d\", &a,&b);\n    res = solveMeFirst(a,b);\n    writeln(res);\n}\n"
+            }, 
+            "ocaml": {
+                "solution": "let () =\n    let a = read_int() in\n    let b = read_int() in\n    print_int(a+b);\n", 
+                "template": "let () =\n    let a = read_int() in\n    let b = read_int() in\n    print_int();\n"
+            }, 
+            "cpp": {
+                "solution": "#include <cmath>\n#include <cstdio>\n#include <vector>\n#include <iostream>\n#include <algorithm>\nusing namespace std;\n\n\nint solveMeFirst(int a, int b) {\n  return a+b;\n}\nint main() {\n  int num1, num2;\n  int sum;\n  cin>>num1>>num2;\n  sum = solveMeFirst(num1,num2);\n  cout<<sum;\n  return 0;\n}\n", 
+                "template": "#include <cmath>\n#include <cstdio>\n#include <vector>\n#include <iostream>\n#include <algorithm>\nusing namespace std;\n\n\nint solveMeFirst(int a, int b) {\n}\nint main() {\n  int num1, num2;\n  int sum;\n  cin>>num1>>num2;\n  sum = solveMeFirst(num1,num2);\n  cout<<sum;\n  return 0;\n}\n"
+            }, 
+            "tcl": {
+                "solution": "proc sum {a b} {\n    expr {$a+$b}\n}\n\nset a [gets stdin]\nset b [gets stdin]\nset res [sum $a $b]\nputs $res\n", 
+                "template": "proc sum {a b} {\n\n}\n\nset a [gets stdin]\nset b [gets stdin]\nset res [sum $a $b]\nputs $res\n"
+            }, 
+            "clojure": {
+                "solution": "(defn solveMeFirst [x y]    \n    (+ x y))\n\n\n(def a (read-line))\n(def b (read-line))\n\n(println (solveMeFirst (Integer/parseInt a) (Integer/parseInt b)))\n", 
+                "template": "(defn solveMeFirst [x y]    \n    )\n\n\n(def a (read-line))\n(def b (read-line))\n\n(println (solveMeFirst (Integer/parseInt a) (Integer/parseInt b)))\n"
+            }
+        }, 
+        "id": 2532, 
+        "lua_template": "solveMeFirst = function(a,b)\n  -- Hint: Type return a+b below   \n\nend\n\n", 
+        "has_ended": false, 
+        "pascal_template_tail": "var A : integer;\n    B : integer;\n    Res : integer;\nbegin\n  Readln (A);\n  Readln (B);\n  Res := solveMeFirst(A,B);\n  WriteLn(Res);\nend.", 
+        "javascript_template": "process.stdin.resume();\nprocess.stdin.setEncoding('ascii');\n\nvar input_stdin = \"\";\nvar input_stdin_array = \"\";\nvar input_currentline = 0;\n\nprocess.stdin.on('data', function (data) {\n    input_stdin += data;\n});\n\nprocess.stdin.on('end', function () {\n    input_stdin_array = input_stdin.split(\"\\n\");\n    main();    \n});\n\nfunction readLine() {\n    return input_stdin_array[input_currentline++];\n}\n\n/////////////// ignore above this line ////////////////////\n\nfunction solveMeFirst(a, b) {\n  // Hint: Type return a+b below   \n  \n}\n\nfunction main() {\n    // write your code here.\n    // call `readLine()` to read a line.\n    // use console.log() to write to stdout\n\n    var a = parseInt(readLine());\n    var b = parseInt(readLine());;\n\n    var res = solveMeFirst(a, b);\n    console.log(res);\n}", 
+        "smalltalk_template": "solveMeFirst := [ :num1 :num2 | \n    \" Hint: Type num1 + num2 below \"\n    num1 + num2 \n].\n\n\n", 
+        "c_template": "int solveMeFirst(int a, int b) {\n    // Hint: Type return a+b; below\n \n}", 
+        "java8_template_tail": " public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        int a;\n        a = in.nextInt();\n        int b;\n        b = in.nextInt();\n        int sum;\n        sum = solveMeFirst(a, b);\n        System.out.println(sum);\n   }\n}\n", 
+        "is_solution_unlocked": false, 
+        "checker_program": null, 
+        "status": null, 
+        "hacker": {
+            "username": "HackerRank", 
+            "is_admin": true, 
+            "id": 15055, 
+            "avatar": "https://hrcdn.net/s3_pub/hr-avatars/4c95f96b-1ff9-46ed-98f8-cb3cb4ed8834/150x150.png"
+        }, 
+        "visualbasic_template": "\nModule Solution\n    Function solveMeFirst(ByVal a,b As Integer) As Integer\n    \t' Hint: Type Return a+b below \n        Return a+b\n    End Function\n    \n", 
+        "track": {
+            "name": "Warmup", 
+            "taxonomy": 1, 
+            "track_slug": "algorithms", 
+            "track_id": 3, 
+            "track_name": "Algorithms", 
+            "id": 43, 
+            "rewards_system_enabled": true, 
+            "slug": "warmup"
+        }, 
+        "csharp_template_head": "using System;\nusing System.Collections.Generic;\nusing System.IO;\nclass Solution {", 
+        "body_html": "<div class='challenge_problem_statement'><div class='msB challenge_problem_statement_body'><div class='hackdown-content'><style id=\"MathJax_SVG_styles\">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}\n.MathJax_SVG .MJX-monospace {font-family: monospace}\n.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}\n.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}\n.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}\n.mjx-svg-href {fill: blue; stroke: blue}\n</style><svg style=\"display: none;\"><defs id=\"MathJax_SVG_glyphs\"></defs></svg><p>Welcome to HackerRank! The purpose of this challenge is to familiarize you with reading input from <a href=\"https://en.wikipedia.org/wiki/Standard_streams#Standard_input_.28stdin.29\">stdin</a> (the standard input stream) and writing output to <a href=\"https://en.wikipedia.org/wiki/Standard_streams#Standard_output_.28stdout.29\">stdout</a> (the standard output stream) using our environment.   </p>\n\n<p>Review the code provided in the editor below, then complete the <em>solveMeFirst</em> function so that it returns the sum of two integers read from stdin. Take some time to understand this code so you're prepared to write it yourself in future challenges.</p>\n\n<p>Select a language below, and start coding!</p></div></div></div><div class='challenge_input_format'><div class='msB challenge_input_format_title'><p><strong>Input Format</strong></p></div><div class='msB challenge_input_format_body'><div class='hackdown-content'><style id=\"MathJax_SVG_styles\">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}\n.MathJax_SVG .MJX-monospace {font-family: monospace}\n.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}\n.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}\n.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}\n.mjx-svg-href {fill: blue; stroke: blue}\n</style><svg style=\"display: none;\"><defs id=\"MathJax_SVG_glyphs\"></defs></svg><p>Code that reads input from stdin is provided for you in the editor. There are <span style=\"font-size: 100%; display: inline-block;\" class=\"MathJax_SVG\" id=\"MathJax-Element-1-Frame\"><svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"1.162ex\" height=\"2.176ex\" style=\"vertical-align: -0.338ex;\" viewBox=\"0 -791.3 500.5 936.9\" role=\"img\" focusable=\"false\"><g stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" transform=\"matrix(1 0 0 -1 0 0)\"><path stroke-width=\"1\" d=\"M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z\"></path></g></svg></span> lines of input, and each line contains a single integer.</p></div></div></div><div class='challenge_output_format'><div class='msB challenge_output_format_title'><p><strong>Output Format</strong></p></div><div class='msB challenge_output_format_body'><div class='hackdown-content'><style id=\"MathJax_SVG_styles\">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}\n.MathJax_SVG .MJX-monospace {font-family: monospace}\n.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}\n.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}\n.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}\n.mjx-svg-href {fill: blue; stroke: blue}\n</style><svg style=\"display: none;\"><defs id=\"MathJax_SVG_glyphs\"></defs></svg><p>Code that prints the sum calculated and returned by <em>solveMeFirst</em> is provided for you in the editor. </p></div></div></div>", 
+        "rust_template_head": "use std::io;", 
+        "max_score": 1, 
+        "pypy3_template_tail": "\nnum1 = int(input())\nnum2 = int(input())\nres = solveMeFirst(num1,num2)\nprint(res)\n", 
+        "user_score": 0, 
+        "requirements_description": null, 
+        "created_at": "2014-05-17T09:05:03.000Z", 
+        "go_template_head": "package main\nimport \"fmt\"\n\n", 
+        "countdown_time": 0, 
+        "objectivec_template": "#import <Foundation/Foundation.h>\nint solveMeFirst(int a, int b) { \n  \t// Hint: Type return a+b; below \n}\n \n", 
+        "coffeescript_template": "readLine = ->\n  input_stdin_array[input_currentline++]\n\n#///////////// ignore above this line ////////////////////\n\nsolveMeFirst = (a, b) ->\n  # Hint: Type return a+b below   \n  return\n\nmain = ->\n  # write your code here.\n  # call `readLine()` to read a line.\n  # use console.log() to write to stdout\n  a = parseInt(readLine())\n  b = parseInt(readLine())\n  res = solveMeFirst(a, b)\n  console.log res\n  return\n\nprocess.stdin.resume()\nprocess.stdin.setEncoding 'ascii'\ninput_stdin = ''\ninput_stdin_array = ''\ninput_currentline = 0\nprocess.stdin.on 'data', (data) ->\n  input_stdin += data\n  return\nprocess.stdin.on 'end', ->\n  input_stdin_array = input_stdin.split('\\n')\n  main()\n  return\n", 
+        "csharp_template_tail": "    static void Main(String[] args) {\n        int val1 = Convert.ToInt32(Console.ReadLine());\n        int val2 = Convert.ToInt32(Console.ReadLine());\n        int sum = solveMeFirst(val1,val2);\n        Console.WriteLine(sum);\n    }\n}      ", 
+        "swift_template": "var a = Int(readLine()!)!\nvar b = Int(readLine()!)!", 
+        "lua_template_tail": "    \na = io.read(\"*number\")\nb = io.read(\"*number\")\nres = solveMeFirst(a,b)\nprint (res)"
+    }
+}

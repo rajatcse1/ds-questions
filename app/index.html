@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+    <meta charset="utf-8" />
+    <title>App Name:</title>
+    <script>
+    document.write('<base href="' + document.location + '" />');
+    </script>
+    <!-- build:css style.css -->
+    <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <!-- endbuild -->
+</head>
+
+<body ng-controller="MainCtrl">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">App Name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <!-- <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form> -->
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-2">
+                <ul>
+                    <li ng-repeat="catagory in catagories">{{catagory.name}}
+                    <ul>
+                        <li ng-repeat="subCatagory in catagory.subcategories" ng-click="onsubCatagoryClick(subCatagory, catagory)">{{subCatagory.name}}</li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li ng-repeat="problem in problems" ng-click="onProblemClick(problem)">{{problem.preview}}</li>
+                </ul>
+            </div>
+            <div class="col-md-6" ng-bind-html="problemContent.model.body_html">
+                
+            </div>
+        </div>
+    </div>
+    <!-- build:js js/lib.js -->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js1 js/app.js -->
+    <script src="./app.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
